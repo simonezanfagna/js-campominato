@@ -54,6 +54,7 @@ if (difficoltà == 0) {
           listaNumeriUtente.push(numeroUtente);
           if (punti == 84 && i == 84) {
             console.log('Hai raggiunto il punteggio massimo \nIl tuo punteggio è :  ' + punti);
+            document.getElementById('my-h1').innerHTML = 'Hai vinto! <br> Il tuo punteggio è :  ' + punti;
           }
           punti++;
         }
@@ -65,7 +66,9 @@ if (difficoltà == 0) {
       else {
         i = 84 ;
         console.log('GAME OVER');
+        document.getElementById('my-h1').innerHTML = 'Game over';
         console.log('Il tuo punteggio è : ' + punti);
+        document.getElementById('my-h2').innerHTML = 'Il tuo punteggio è : ' + punti;
       }
       //console.log('OK');
     }
@@ -96,6 +99,7 @@ else if (difficoltà == 1) {
           listaNumeriUtente.push(numeroUtente);
           if (punti == 64 && i == 64) {
             console.log('Hai raggiunto il punteggio massimo \nIl tuo punteggio è :  ' + punti);
+            document.getElementById('my-h1').innerHTML = 'Hai vinto! <br> Il tuo punteggio è :  ' + punti;
           }
           punti++;
         }
@@ -107,7 +111,9 @@ else if (difficoltà == 1) {
       else {
         i = 64 ;
         console.log('GAME OVER');
+        document.getElementById('my-h1').innerHTML = 'Game over';
         console.log('Il tuo punteggio è : ' + punti);
+        document.getElementById('my-h2').innerHTML = 'Il tuo punteggio è : ' + punti;
       }
       //console.log('OK');
     }
@@ -138,6 +144,7 @@ else if (difficoltà == 2) {
           listaNumeriUtente.push(numeroUtente);
           if (punti == 34 && i == 34) {
             console.log('Hai raggiunto il punteggio massimo \nIl tuo punteggio è :  ' + punti);
+            document.getElementById('my-h1').innerHTML = 'Hai vinto! <br> Il tuo punteggio è :  ' + punti;
           }
           punti++;
         }
@@ -150,7 +157,9 @@ else if (difficoltà == 2) {
       else {
         i = 34 ;
         console.log('GAME OVER');
+        document.getElementById('my-h1').innerHTML = 'Game over';
         console.log('Il tuo punteggio è : ' + punti);
+        document.getElementById('my-h2').innerHTML = 'Il tuo punteggio è : ' + punti;
       }
       //console.log('OK');
     }
@@ -164,3 +173,4 @@ else if (difficoltà == 2) {
 }
 
 console.log(listaNumeriRandom);
+document.getElementById('lista-numeri-pc').innerHTML = 'Numeri scelti casualmente dal computer : ' + listaNumeriRandom;
